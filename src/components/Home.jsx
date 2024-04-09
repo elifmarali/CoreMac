@@ -129,7 +129,7 @@ function Home() {
         <div className="featureContainer" data-aos="fade-up-left">
           <div className="featureCard">
             <div className="featureCardSvg">
-              <MdCastForEducation size={50} style={{ color: "#ff8e3c" }} />
+              <MdCastForEducation size={40} style={{ color: "#ff8e3c" }} />
             </div>
             <div className="featureCardHeader">Eğitimler</div>
             <div className="featureCardDescription">
@@ -149,12 +149,11 @@ function Home() {
           </div>
           <div className="featureCard">
             <div className="featureCardSvg">
-              <MdOutlinePlayLesson size={50} style={{ color: "#ff8e3c" }} />
+              <MdOutlinePlayLesson size={40} style={{ color: "#ff8e3c" }} />
             </div>
             <div className="featureCardHeader">Eğitim Değerlendirmesi</div>
             <div className="featureCardDescription">
-              Kullanıcılar, aldıkları eğitimleri sonlandırdıklarında
-              değerlendirme yapabilirler.
+              Kullanıcılar, eğitim sonrasında eğitimi değerlendirirler.
             </div>{" "}
             <div
               className="featureLink"
@@ -170,12 +169,11 @@ function Home() {
           </div>
           <div className="featureCard">
             <div className="featureCardSvg">
-              <PiExam size={50} style={{ color: "#ff8e3c" }} />
+              <PiExam size={40} style={{ color: "#ff8e3c" }} />
             </div>
             <div className="featureCardHeader">Sınav Değerlendirmesi</div>
             <div className="featureCardDescription">
-              Kullanıcılar, tamamladıkları sınavları değerlendirerek
-              performanslarını gözden geçirebilirler.
+              Kullanıcılar, tamamladıkları sınavları değerlendirirler.
             </div>{" "}
             <div
               className="featureLink"
@@ -191,12 +189,12 @@ function Home() {
           </div>
           <div className="featureCard">
             <div className="featureCardSvg">
-              <AiOutlineFieldTime size={50} style={{ color: "#ff8e3c" }} />
+              <AiOutlineFieldTime size={40} style={{ color: "#ff8e3c" }} />
             </div>
             <div className="featureCardHeader">Kısa Süreli Sınavlar</div>
             <div className="featureCardDescription">
               Kullanıcıların kısa süreli sınavlarla bilgi düzeylerini
-              değerlendirmelerine olanak sağlar.
+              değerlendirirler.
             </div>
             <div
               className="featureLink"
@@ -212,7 +210,7 @@ function Home() {
           </div>
           <div className="featureCard">
             <div className="featureCardSvg">
-              <AiFillSafetyCertificate size={50} style={{ color: "#ff8e3c" }} />
+              <AiFillSafetyCertificate size={40} style={{ color: "#ff8e3c" }} />
             </div>
             <div className="featureCardHeader">Sertifikalar ve Başarı</div>
             <div className="featureCardDescription">
@@ -232,12 +230,11 @@ function Home() {
           </div>
           <div className="featureCard">
             <div className="featureCardSvg">
-              <FaShapes size={50} style={{ color: "#ff8e3c" }} />
+              <FaShapes size={40} style={{ color: "#ff8e3c" }} />
             </div>
             <div className="featureCardHeader">Çeşitli Sınavlar</div>
             <div className="featureCardDescription">
-              CoreCampus, kullanıcılara farklı konularda sınavlara katılma
-              imkanı tanır.
+              CoreCampus kullanıcıları farklı konularda sınavlara katılır.
             </div>
             <div
               className="featureLink"
@@ -253,7 +250,7 @@ function Home() {
           </div>
           <div className="featureCard">
             <div className="featureCardSvg" style={{ marginBottom: "14px" }}>
-              <MdOutlineMobileFriendly size={50} style={{ color: "#ff8e3c" }} />
+              <MdOutlineMobileFriendly size={40} style={{ color: "#ff8e3c" }} />
             </div>
             <div className="featureCardHeader">Kullanıcı Dostu Arayüz</div>
             <div className="featureCardDescription">
@@ -280,7 +277,7 @@ function Home() {
             </div>
             <div className="featureCardHeader">Güvenli Bilgi Saklama</div>
             <div className="featureCardDescription">
-              Kullanıcı bilgileri, CoreCampus tarafından JWT ile güvenli bir
+              Kullanıcı bilgileri, JWT ile güvenli bir
               şekilde saklanır.
             </div>{" "}
             <div

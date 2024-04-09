@@ -17,11 +17,12 @@
 
 .footerOption,
 .footerOptions button {
+    border: none;
     color: #0d0d0d;
-    font-size: 18px;
+    font-size: 16px;
 }
 
-.nav-link:hover {
+.footerLink:hover {
     transition: 300ms all;
     cursor: pointer;
     color: #ff8e3c;

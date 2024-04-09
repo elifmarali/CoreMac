@@ -12,7 +12,7 @@ function Footer() {
     <li className="footerOption">
             <button
               onClick={() => navigate("/certificates")}
-              className="nav-link"
+              className="footerLink"
             >
               Sertifikalar
             </button>
@@ -20,13 +20,13 @@ function Footer() {
           <li className="footerOption">
             <button
               onClick={() => navigate("/hakkimizda")}
-              className="nav-link"
+              className="footerLink"
             >
               Hakkımızda
             </button>
           </li>
           <li className="footerOption">
-            <button onClick={() => navigate("/comunicate")} className="nav-link">İletişim</button>
+            <button onClick={() => navigate("/comunicate")} className="footerLink">İletişim</button>
           </li>
     </ul>
 <div className="socialMedia">

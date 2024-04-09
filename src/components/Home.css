@@ -25,7 +25,7 @@
 }
 
 .content {
-  width: 40vw;
+  width: 40%;
   max-width: 40vw;
   padding: 10px;
   display: flex;
@@ -76,6 +76,7 @@
   position: absolute;
   z-index: 10;
   padding: 30px;
+
 }
 
 .irregularCircle {
@@ -91,14 +92,14 @@
 .totalContainer {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  height: 100px;
+  width: 180px;
+  height: 90px;
   text-align: center;
   position: relative;
   gap: 6px;
   border: 0.1px solid lightgray;
   border-radius: 10px;
-  left: 80px;
+  left: 40px;
   top: 40px;
   background-color: rgba(255, 255, 255, 0.789);
   padding: 10px;
@@ -122,8 +123,8 @@
 }
 
 .userImage {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 1px solid white;
   position: absolute;
@@ -154,8 +155,8 @@
   color: white;
   position: absolute;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   left: 120px;
   background-color: #d9376e;
   display: flex;
@@ -168,7 +169,7 @@
 .contentRightSection {
   width: 40vw;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   height: auto;
   height: 100%;
@@ -178,10 +179,11 @@
 .irregularCircle {
   position: absolute;
   background-color: #ff8e3c;
-  width: 340px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 30% / 48%;
-  left: 300px;
+  left: 200px;
+bottom: 90px;
   z-index: 0;
 }
 
@@ -252,8 +254,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
-  padding: 10px;
+  gap: 10px;
+  padding: 5px;
   justify-content: center;
   border: 0.1px dotted gray;
   background-color: #eff0f3;
@@ -289,8 +291,8 @@
   color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 14px;
-  margin-top: 16px;
+  padding: 10px;
+  margin-top: 10px;
   width: 200px;
 }
 
@@ -347,6 +349,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .lessonExamTitle {
@@ -451,6 +454,7 @@
 
 .whyItem strong {
   color: #0d0d0d;
+  font-weight: 600;
 }
 
 .whySpan {
