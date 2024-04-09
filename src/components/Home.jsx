@@ -44,6 +44,9 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { MdOutlinePlayLesson } from "react-icons/md";
 import { PiExam } from "react-icons/pi";
 import { AiOutlineExclamation } from "react-icons/ai";
+import examImage from "../usersPhoto/exam.jpg";
+import exam1Image from "../usersPhoto/lesson.jpg";
+import whyImage from "../usersPhoto/why.png";
 function Home() {
   const navigate = useNavigate();
   const { currentUserPointsData, currentUser } = useContext(AuthContext);
@@ -295,6 +298,82 @@ function Home() {
           <button onClick={() => navigate("/about")} className="featureButton">
             Daha Fazla...
           </button>
+        </div>
+      </div>
+      <div className="homeLessonExamContainer">
+        <div className="lessonExamTop">
+          <div className="lessonExamTitle">
+            <span className="mainLine" />
+            CoreCampus
+          </div>
+          <div className="featureHeader">Eğitimler & Sınavlar</div>
+          <div className="mainSubtitle">
+            Hangi İçeriğimizi Tercih Etmek İstersiniz?
+          </div>
+        </div>
+        <div className="lessonExamBottom">
+          <div className="lessonExamCard">
+            <img
+              src={exam1Image}
+              alt="lessonUserImage"
+              className="lessonExamImage"
+            />
+            <div className="lessonExamCardTitle">
+              Eğitimlerimize göz atmak ister misin?
+            </div>
+            <p className="lessonExamDesc">
+              Bizimle birlikte öğrenmeye hazır mısınız? Uzmanlarımız tarafından
+              hazırlanan eğitim içeriklerini keşfedin ve alanınızda kendinizi
+              geliştirin.
+            </p>
+            <button className="lessonExamButton">Eğitimlere Git</button>
+          </div>
+          <div className="lessonExamCard">
+            <img
+              src={examImage}
+              alt="examUserImage"
+              className="lessonExamImage"
+            />
+            <div className="lessonExamCardTitle">
+              Sertifika kazanmak ister misin?
+            </div>
+            <p className="lessonExamDesc">
+              Kendinizi test edin ve hazır hissedene kadar pratik yapın.
+              Sonucunda sertifikalarınızı cv'nize ekleyin!
+            </p>
+            <button
+              className="lessonExamButton"
+              onClick={() => {
+                navigate("/examsPage");
+              }}
+            >
+              Sınav Hazırlıklarına Git
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="whyChooseUs">
+        <div className="whyRightSection">
+          <img src={whyImage} alt="why image" className="whyImage" />
+        </div>
+        <div className="whyLeftSection">
+          <h3 className="whyHeader">Bizi Tercih Etmeniz İçin Nedenler</h3>
+          <ul className="whyList">
+            <span className="whySpan" />
+            <li className="whyItem">
+              <strong>Uzman İçerikler:</strong> Alanında uzman eğitmenlerimiz
+              tarafından hazırlanan içeriklerle kendinizi geliştirin.
+            </li>
+            <li className="whyItem">
+              <strong>Kapsamlı Kaynaklar:</strong> Geniş kütüphanemizdeki
+              eğitimler ve sınav hazırlıkları ile ihtiyacınız olan her şeye
+              erişin.
+            </li>
+            <li className="whyItem">
+              <strong>Esneklik:</strong> İstediğiniz zaman, istediğiniz yerden
+              erişebilme olanağıyla öğrenmeyi kolaylaştırın.
+            </li>
+          </ul>
         </div>
       </div>
       <div className="bottomSectionHome">

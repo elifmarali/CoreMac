@@ -255,7 +255,7 @@
   gap: 14px;
   padding: 10px;
   justify-content: center;
-  border: 1.4px dotted gray;
+  border: 0.1px dotted gray;
   background-color: #eff0f3;
   align-items: center;
   margin: 0 10px;
@@ -296,11 +296,11 @@
 
 .promationSection {
   height: 90vh;
-  background: #0cebeb;
+  background: #FF512F;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ff8e3c, #fbac73, #f9aa72);
+  background: -webkit-linear-gradient(to right, #ff8e3c, #d9376e);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ff8e3c, #fba86d, #f9aa72);
+  background: linear-gradient(to right, #ff8e3c, #d9376e);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
   display: flex;
@@ -319,10 +319,10 @@
 }
 
 .promationSectionButton {
-  background-color: #d9376e;
-  color: #fffffe;
+  background-color: #eff0f3;
+  color: #ff8e3c;
   padding: 20px;
-  border: 1.4px solid #d9376e;
+  border: 4px solid #d9376e;
   border-radius: 20px;
   font-size: 20px;
   transition: 300ms all;
@@ -330,4 +330,131 @@
 
 .promationSectionButton:hover {
   transform: scale(1.05);
+}
+
+.homeLessonExamContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #eff0f3;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  padding: 50px;
+  justify-content: space-around;
+}
+
+.lessonExamTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lessonExamTitle {
+  color: #d9376e;
+}
+
+.lessonExamBottom {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 60px;
+  width: 80vw;
+}
+
+.lessonExamCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 96%;
+  background-color: #fffffe;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0.4px 0.4px #d9376e;
+}
+
+.lessonExamImage {
+  width: 50%;
+}
+
+.lessonExamCardTitle {
+  color: #0d0d0d;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.lessonExamDesc {
+  color: #828080;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.lessonExamButton {
+  background-color: #ff8e3c;
+  color: #fffffe;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.whyChooseUs {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #fffffe;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  padding: 100px;
+  justify-content: center;
+  gap: 70px;
+}
+
+.whyRightSection {
+  width: 45%;
+}
+
+.whyImage {
+  width: 100%;
+  border-radius: 30% 12% 44% 68%/10% 2% 4% 1%;
+  padding: 20px;
+}
+
+.whyLeftSection {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.whyHeader {
+  color: #0d0d0d;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+
+
+.whyList {
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.whyItem {
+  color: #2a2a2a;
+}
+
+.whyItem strong {
+  color: #0d0d0d;
+}
+
+.whySpan {
+  width: 100%;
+  background-color: lightgray;
+  height: 1px;
 }
