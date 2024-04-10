@@ -40,6 +40,7 @@ const Header = () => {
     setCurrentUser(null);
     setCurrentUserId(null);
     setCurrentUserPointsData(null);
+    navigate("/")
   };
 
 

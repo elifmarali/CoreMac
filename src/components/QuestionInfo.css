@@ -12,7 +12,7 @@
   align-items: center;
   background-color: aliceblue;
   height: 100%;
-  background-image: linear-gradient(180deg, #22c997, #30e6b0, #fff);
+  background-image: linear-gradient(180deg, #ff8e3c, #d9376e, #fffffe);
   padding: 20px;
 }
 .head {
@@ -39,7 +39,7 @@
   font-family: "Abril Fatface", serif;
   font-size: 70px;
   font-weight: 500;
-  color: #021b35;
+  color: #0d0d0d;
 }
 .questionInfoRightSection {
   width: 30vw;
@@ -59,22 +59,22 @@
 .rightSectionItem {
   font-size: 12px;
   font-weight: 100;
-  color: #064990;
+  color:#2a2a2a ;
 }
 .rightSectionItemfs{
   font-size: 14px;
 }
 .questionInfoButton {
-  background-color: #021b35;
+  background-color: #0d0d0d;
   color: #fff;
   padding: 10px 50px;
-  border: 1.8px solid #021b35;
+  border: 1.8px solid #0d0d0d;
   border-radius: 20px;
   font-size: 16px;
   transition: 400ms all;
   margin-top: 10px;
 }
 .questionInfoButton:hover {
-  background-color: #064990;
+  background-color:#2a2a2a ;
   transform: scale(1.05);
 }

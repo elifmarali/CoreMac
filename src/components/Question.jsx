@@ -62,7 +62,7 @@ function Question() {
     const squares = document.querySelectorAll(".square");
     squares.forEach((square, index) => {
       if (index + 1 === currentQuestion) {
-        square.style.backgroundColor = "#021B35";
+        square.style.backgroundColor = "#d9376e";
         square.style.fontSize = "18px";
       }
     });
