@@ -14,6 +14,7 @@ import { useContext, useEffect } from "react";
 import Result from "./components/Result";
 import Communicate from "./components/Comunicate";
 import Profile from "./components/Profile";
+import FAQ from "./components/FAQ";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/certificates" element={<Certificate />} />
         <Route path="/comunicate" element={<Communicate />} />
         <Route path="/examsPage" element={<ExamsPage />} />
+        <Route path="/faq" element = {<FAQ/>}/>
         <Route path="/about" element={<Hakkimizda />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

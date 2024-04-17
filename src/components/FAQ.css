@@ -1,0 +1,37 @@
+.titleContainer{
+    height: 20vh;
+    display: flex;
+    padding: 40px;
+    background-color: #eff0f3;
+    align-items: center;
+    justify-content:center; 
+    /* Flex-start ile başa çekebiliriz. */
+}
+
+.titleContainer h1{
+    color: #2a2a2a;
+    text-shadow: 2px 22px 8px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.accordionField{
+    height:52vh;
+
+}
+
+.UncontrolledAccordion{
+    margin: 5px auto;
+    width:95%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.AccordionField{
+    background-color: #eff0f3;
+}
+
+.accordion-body{
+    color: #ff8e3c;
+}
+
