@@ -56,6 +56,9 @@ const Header = () => {
       </div>
       <div className="nav-list">
         <ul>
+        <li className="nav-item">
+            <button onClick={() => navigate("/lessons")} className="nav-link">Eğitimler</button>
+          </li>
           <li className="nav-item">
             <button onClick={() => navigate("/examsPage")} className="nav-link">
               Sınavlar

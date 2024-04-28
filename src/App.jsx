@@ -15,6 +15,8 @@ import Result from "./components/Result";
 import Communicate from "./components/Comunicate";
 import Profile from "./components/Profile";
 import FAQ from "./components/FAQ";
+import Lessons from "./components/Lessons";
+import LessonContent from "./components/LessonContent";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
         <Route path="/questionInfo" element={<QuestionInfo />} />
         <Route path="/result/:userID/:examName" element={<Result/>}></Route>
         <Route path="/user/:userID" element={<Profile/>}></Route>
+        <Route path="/lessons" element={<Lessons/>}></Route>
+        <Route path="/lessonContent/:educationId" element={<LessonContent/>}></Route>
         <Route path="/footer" element={<Footer />} />
       </Routes>
     </Router>
