@@ -90,10 +90,10 @@
   padding: 20px;
   background-color: #ff8e3c;
   color: #fff;
-  width: 150px;
+  width: 170px;
   height: 50px;
   border-radius: 10px;
-  margin-left: 40px;
+  margin-left: 20px;
   transition: 300ms all;
 }
 
@@ -109,4 +109,14 @@
 
 .itemNav:hover .lessonItemIcon{
      transform:translateX(6px) 
+}
+
+.lessonIcon{
+  color: #fff;
+  font-size: 20px;
+  transition: 300ms all;
+}
+
+.showMoreButton:hover .lessonIcon{
+  transform:translateX(6px) 
 }

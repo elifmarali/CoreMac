@@ -6,6 +6,7 @@ import Header from "./Header";
 import "./Lessons.css";
 
 import Footer from "./Footer";
+import { FaCaretRight } from "react-icons/fa";
 
 function Lessons() {
   const { lessons, lessonGroup } = useContext(LessonsContext);
@@ -63,7 +64,7 @@ function Lessons() {
                         ))}
                   {lessonGroup[key].length > 3 && !showAll && (
                     <button onClick={handleShowAll} className="showMoreButton">
-                      Daha Fazlası...
+                      Daha Fazlası <FaCaretRight className="lessonIcon"/>
                     </button>
                   )}
                 </div>
