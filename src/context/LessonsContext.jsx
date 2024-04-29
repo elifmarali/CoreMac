@@ -8,12 +8,19 @@ function LessonsProvider({ children }) {
   const { currentUser } = useContext(AuthContext);
   const [lessons, setLessons] = useState([]);
   const [lessonGroup, setLessonGroup] = useState([]);
-
+  const [selectedLesson, setSelectedLesson] = useState();
+  const [selectedLessonInfo, setSelectedLessonInfo] = useState();
   useEffect(() => {
     if (currentUser) {
       getLessonsData();
     }
   }, [currentUser]);
+
+  useEffect(() => {
+    if (selectedLesson !== undefined) {
+      getSelectedLessonInfo();
+    }
+  }, [selectedLesson]);
 
   const getLessonsData = async () => {
     try {
@@ -44,9 +51,25 @@ function LessonsProvider({ children }) {
     return groupedLessons;
   };
 
+  const getSelectedLessonInfo = async () => {
+    try {
+      const response = await axios.get(
+        `https://localhost:44309/api/Education/getById?id=${selectedLesson}`
+      );
+      const lessonInfo = response.data.data;
+
+      setSelectedLessonInfo(lessonInfo);
+    } catch (err) {
+      console.error("Error fetching lessons info data:", err);
+    }
+  };
+
   const data = {
     lessons,
-    lessonGroup
+    lessonGroup,
+    selectedLesson,
+    setSelectedLesson,
+    selectedLessonInfo,
   };
 
   return (

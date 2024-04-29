@@ -4,13 +4,14 @@ import { useContext } from "react";
 import LessonItem from "./LessonItem";
 import Header from "./Header";
 import "./Lessons.css";
-import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
+
 import Footer from "./Footer";
 
 function Lessons() {
   const { lessons, lessonGroup } = useContext(LessonsContext);
   const [loading, setLoading] = useState(true);
-console.log(lessonGroup);
+  const [showAll, setShowAll] = useState(false);
+
   useEffect(() => {
     if (lessonGroup !== null && lessonGroup !== undefined) {
       setLoading(false);
@@ -19,7 +20,12 @@ console.log(lessonGroup);
     }
   }, [lessonGroup, lessons]);
 
-  console.log(loading);
+  const handleShowAll = () => {
+    setShowAll(true);
+  };
+  const handleClickClose = () => {
+    setShowAll(false);
+  };
   return (
     <>
       <Header />
@@ -29,24 +35,44 @@ console.log(lessonGroup);
         ) : (
           Object.keys(lessonGroup).map((key) => (
             <div className="lesson" key={key}>
-              <h2 className="lessonHeader">{key}</h2>
-              <div className="lessonContainer">
-                <div key={key} className="lessonItemGroup">
-                  {lessonGroup[key].map((lesson, index) => (
-                    <LessonItem
-                      lesson={lesson}
-                      key={index}
-                      id={lesson.educationId}
-                    />
-                  ))}
-                </div>{" "}
-              
+              <div className="lessonTopSection">
+                {" "}
+                <h2 className="lessonHeader">{key}</h2>
+                {showAll && lessonGroup[key].length > 3 ? <button onClick={handleClickClose}>X</button> : ""}
+              </div>
+              <div className="lessonContainer" >
+                <div className="lessonItemGroup" >
+                  {showAll
+                    ? lessonGroup[key].map((lesson, index) => (
+                        <>
+                          <LessonItem
+                            lesson={lesson}
+                            key={index}
+                            id={lesson.educationId}
+                          />
+                        </>
+                      ))
+                    : lessonGroup[key]
+                        .slice(0, 3)
+                        .map((lesson, index) => (
+                          <LessonItem
+                            lesson={lesson}
+                            key={index}
+                            id={lesson.educationId}
+                          />
+                        ))}
+                  {lessonGroup[key].length > 3 && !showAll && (
+                    <button onClick={handleShowAll} className="showMoreButton">
+                      Daha Fazlası...
+                    </button>
+                  )}
+                </div>
               </div>
             </div>
           ))
         )}
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

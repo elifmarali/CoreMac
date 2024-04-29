@@ -10,12 +10,20 @@
 .lesson {
   padding: 10px;
 }
+
+.lessonTopSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90vw;
+  font-weight: 900;
+  font-size: 20px;
+}
 .lessonHeader {
   font-size: 30px;
   font-weight: 900;
   color: #0d0d0d;
   margin-left: 100px;
-
 }
 
 .lessonContainer {
@@ -37,6 +45,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 20px;
 }
 
 .lessonItem {
@@ -47,7 +58,7 @@
   border-left: 0.1px solid #ccc;
   padding: 20px;
   height: 100%;
-  width: 20vw;
+  width: 24vw;
   gap: 20px;
   cursor: pointer;
 }
@@ -56,6 +67,7 @@
   font-size: 20px;
   font-weight: 700;
   color: #0d0d0d;
+  height: 7vh;
 }
 
 .itemImage {
@@ -68,4 +80,33 @@
 .itemNav {
   color: #d9376e;
   font-size: 14px;
+}
+
+
+.showMoreButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #ff8e3c;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 40px;
+  transition: 300ms all;
+}
+
+.showMoreButton:hover{
+  transform: scale(1.05);
+}
+
+.lessonItemIcon{
+  color: #d9376e;
+  font-size: 20px;
+  transition: 300ms all;
+}
+
+.itemNav:hover .lessonItemIcon{
+     transform:translateX(6px) 
 }
