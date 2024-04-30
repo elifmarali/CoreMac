@@ -5,7 +5,6 @@ import Header from "./Header";
 import "./Profile.css";
 import admin from "../usersPhoto/admin.png";
 
-
 function Profile() {
   const { currentUser, currentUserPointsData } = useContext(AuthContext);
   const [formattedName, setFormattedName] = useState("");
@@ -44,7 +43,7 @@ function Profile() {
     const ctx = canvas.getContext("2d");
     const image = new Image();
     image.crossOrigin = "anonymous";
-    image.src = "/sertifikaSon.png";
+    image.src ="../../public/sertifikaSon.png";
 
     image.onload = function () {
       ctx.drawImage(image, 0, 0, canvas.width, canvas.height);

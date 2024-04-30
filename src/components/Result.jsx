@@ -28,6 +28,7 @@ function Result() {
     image.crossOrigin = "anonymous";
     image.src = "/sertifikaSon.png";
 
+
     image.onload = function () {
       ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
       ctx.font = "60px Bebas Neue";

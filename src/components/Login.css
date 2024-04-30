@@ -34,13 +34,14 @@
     text-align: center;
 }
 
-.inputBox {
+ .inputBox {
     position: relative;
     width: 300px;
     margin-bottom: 40px;
+    display: flex;
 }
 
-.inputBox input {
+.inputBox .loginInput {
     position: relative;
     width: 100%;
     padding: 10px 0;
@@ -53,7 +54,7 @@
     letter-spacing: 0.15em;
 }
 
-.inputBox input:focus {
+.inputBox .loginInput:focus {
     border-bottom: 2px solid rgb(5, 15, 26);
 }
 
@@ -171,4 +172,3 @@
     font-size: 16px;
     font-weight: 600;
 }
-

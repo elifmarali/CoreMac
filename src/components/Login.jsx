@@ -81,6 +81,7 @@ function Login() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            className="loginInput"
           />
           <label htmlFor="username">E-mail</label>
         </div>
@@ -90,6 +91,7 @@ function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+            className="loginInput"
           />
           <label htmlFor="password">Şifre</label>
         </div>

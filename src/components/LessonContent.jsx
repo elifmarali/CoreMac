@@ -22,7 +22,7 @@ function LessonContent() {
     }
   }, [selectedLesson]);
 
-  console.log(selectedLessonInfo);
+
 
   const firstTenSentences =
     selectedLessonInfo?.educationDescription.split(".").slice(0, 7).join(".") +

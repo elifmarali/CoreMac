@@ -2,8 +2,27 @@ import React from "react";
 import Header from "./Header";
 import "./Hakkimizda.css";
 import Footer from "./Footer";
+import banner from "../image/about-banner.png";
+import lessons from "../image/dersler.png";
+import exam from "../image/sinav.png";
+import wrapping from "../image/3d-glassy-iridescent-connections-in-a-glass-molecule-1.png";
+import completion from "../image/ders-tamamlama.png"
+import success from "../image/sertifika.png"
+import {useSpring, animated} from "react-spring"; 
+// npm i react-spring
 
 function Hakkimizda() {
+
+    function Number({n}){
+        const {number} = useSpring({
+            from: {number : 0},
+            number: n,
+            delay:200,
+            config: {mass: 1, tension: 25, friction:10}, 
+        });
+        return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>
+    }
+
   return (
     <div classNameName="aboutContainer">
       <Header />
@@ -13,7 +32,7 @@ function Hakkimizda() {
             <section className="section about" id="about">
                 <div className="container">
                     <figure className="about-banner">
-                        <img src="../image/about-banner.png" width="700" height="532" loading="lazy" alt="about banner" className="w-100 banner-animation"/>
+                        <img src={banner} width="700" height="532" loading="lazy" alt="about banner" className="w-100 banner-animation"/>
                     </figure>
                     <div className="about-content">
                         <h2 className="h2 section-title underline">Neden CoreCampus?</h2>
@@ -25,15 +44,18 @@ function Hakkimizda() {
                         </p>
                         <ul className="stats-list">
                             <li className="stats-card">
-                                <p className="h3 stats-title">9875</p>
+                                <p className="h3 stats-title"><Number n={9785}/></p>
+                                {/* <p className="h3 stats-title">9875</p> */}
                                 <p className="stats-text">Kayıtlı Öğrenci</p>
                             </li>
                             <li className="stats-card">
-                                <p className="h3 stats-title">185</p>
+                                <p className="h3 stats-title"><Number n={185}/></p>
+                                {/* <p className="h3 stats-title">185</p> */}
                                 <p className="stats-text">Farklı Alan</p>
                             </li>
                             <li className="stats-card">
-                                <p className="h3 stats-title">1162</p>
+                                <p className="h3 stats-title"><Number n={1162}/></p>
+                                {/* <p className="h3 stats-title">1162</p> */}
                                 <p className="stats-text">Kazanılan Sertifika</p>
                             </li>
                         </ul>
@@ -46,7 +68,7 @@ function Hakkimizda() {
                     <ol className="ps-timeline">
                         <li>
                             <div className="img-handler-top">
-                                <img src="../image/dersler.png" alt=""/>
+                                <img src={lessons} alt="dersler-image"/>
                             </div>
                             <span className="ps-sp-top">☆</span>
                             <div className="ps-bot">
@@ -55,7 +77,7 @@ function Hakkimizda() {
                         </li>
                         <li>
                             <div className="img-handler-bot">
-                                <img src="../image/ders tamamlama.png" alt=""/>
+                                <img src={completion} alt=""/>
                             </div>
                             <span className="ps-sp-bot">☞</span>
                             <div className="ps-top">
@@ -64,7 +86,7 @@ function Hakkimizda() {
                         </li>
                         <li>
                             <div className="img-handler-top">
-                                <img src="../image/sınav.png" alt=""/>
+                                <img src={exam} alt="sinav-image"/>
                             </div>
                             <span className="ps-sp-top">☞</span>
                             <div className="ps-bot">
@@ -73,7 +95,7 @@ function Hakkimizda() {
                         </li>
                         <li>
                             <div className="img-handler-bot">
-                                <img src="../image/sertifika.png" alt=""/>
+                                <img src={success} alt=""/>
                             </div>
                             <span className="ps-sp-bot">★
                             </span>
@@ -130,7 +152,7 @@ function Hakkimizda() {
                         </div>
                         <div className="col">
                             <div className="ill-wrap">
-                                <img src="../image/3d-glassy-iridescent-connections-in-a-glass-molecule-1.png" className="wrap-img" alt="mobile-photo"/>
+                                <img src={wrapping} className="wrap-img" alt="mobile-photo"/>
                             </div>
                         </div>
                     </div>

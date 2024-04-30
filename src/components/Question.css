@@ -62,7 +62,7 @@ background-color: #eff0f3;
   gap: 10px;
 }
 .questionOption{
-    border: none;
+    border: 0.1px solid lightgray;
     text-align: start;
     padding: 10px;
     padding-left: 24px;
